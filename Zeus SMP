@@ -1,0 +1,66 @@
+name: ZeusSMP
+main: zeussmp\ZeusSMP
+api: ["5.0.0"]
+version: "1.0.0"
+author: BluzeOG#3178
+description: "Sistem Clan, Rank, Shop, dan Warp untuk Zeus SMP dengan menu /menu"
+
+commands:
+  menu:
+    description: "Buka menu utama Zeus SMP (Clan, Shop, Warp)"
+    aliases: [m, zeus]
+    permission: zeussmp.command.menu
+
+  clan:
+    description: "Perintah sistem clan"
+    aliases: [c]
+    permission: zeussmp.command.clan
+
+  warp:
+    description: "Teleport ke warp"
+    permission: zeussmp.command.warp
+
+  setwarp:
+    description: "Membuat warp baru (admin)"
+    permission: zeussmp.command.setwarp
+
+  delwarp:
+    description: "Menghapus warp (admin)"
+    permission: zeussmp.command.delwarp
+
+  rank:
+    description: "Mengatur rank pemain (admin)"
+    permission: zeussmp.command.rank
+
+  balance:
+    description: "Cek saldo koin"
+    aliases: [bal, money, coins]
+    permission: zeussmp.command.balance
+
+  pay:
+    description: "Transfer koin ke pemain lain"
+    permission: zeussmp.command.pay
+
+  setcoins:
+    description: "Mengatur saldo koin pemain (admin)"
+    permission: zeussmp.command.setcoins
+
+permissions:
+  zeussmp.command.menu:
+    default: true
+  zeussmp.command.clan:
+    default: true
+  zeussmp.command.warp:
+    default: true
+  zeussmp.command.setwarp:
+    default: op
+  zeussmp.command.delwarp:
+    default: op
+  zeussmp.command.rank:
+    default: op
+  zeussmp.command.balance:
+    default: true
+  zeussmp.command.pay:
+    default: true
+  zeussmp.command.setcoins:
+    default: op
